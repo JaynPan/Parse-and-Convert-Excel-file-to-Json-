@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sync the Excel sheet</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript" src="../jquery-3.0.0.js"></script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <section id="products" class="section">
+        <header class="imageheader"></header>
+        <div class="container">
+          <h2 class="headline">Products</h2>
+          <p>H+ Sport is <em>dedicated to creating</em> eco-friendly, high-quality, nutrient-rich, nutritional products that <em>enhance active lifestyles</em>. We <a href="#guarantee">guarantee</a> it. Take a look at some of our products.</p>
+        </div><!-- container -->
+        <input type="checkbox" name="Vitamin" value="vitamin" checked>Vitamin
+        <input type="checkbox" name="mineralwater" value="mineralwater" checked>mineralwater
+        <input type="checkbox" name="proteinbar" value="proteinbar" checked>proteinbar
+        <ul class="product-list">
+          <li class="product-item" data-prod_id="V-A1037">
+              <img class="product-image" src="images/products/vitamin-a.jpg" alt="Vitamin A - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Vitamin A</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-BC2178">
+              <img class="product-image" src="images/products/vitamin-bcomplex.jpg" alt="B Complex - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Vitamin-B Complex</h2>
+          </li>
+          <li class="product-item" data-prod_id="MW-8812">
+              <img class="product-image" src="images/products/mineralwater-blueberry.jpg" alt="Blueberry Mineral Water - Product Photo">
+              <h2 class="product-name" data-type="mineralwater">Blueberry Mineral Water</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-C6614">
+              <img class="product-image" src="images/products/vitamin-c.jpg" alt="Vitamin C - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Vitamin C</h2>
+          </li>
+          <li class="product-item" data-prod_id="PB-8154">
+              <img class="product-image" src="images/products/proteinbar-chocolate.jpg" alt="Protein Bar Chocolate - Product Photo">
+              <h2 class="product-name" data-type="proteinbar">Chocolate Protein Bar</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-CA4543">
+              <img class="product-image" src="images/products/vitamin-calcium.jpg" alt="Vitamin Calcium - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Calcium Vitamin</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-D1825">
+              <img class="product-image" src="images/products/vitamin-d.jpg" alt="Vitamin D - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Vitamin D</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-F2225">
+              <img class="product-image" src="images/products/vitamin-flaxseed-oil.jpg" alt="Flaxseed Oil - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Flaxseed Oil Vitamin</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-I7456">
+              <img class="product-image" src="images/products/vitamin-iron.jpg" alt="Vitamin Iron - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Iron Vitamin</h2>
+          </li>
+          <li class="product-item" data-prod_id="MW-9143">
+              <img class="product-image" src="images/products/mineralwater-lemonlime.jpg" alt="Mineral Water Lemon Lime - Product Photo">
+              <h2 class="product-name" data-type="mineralwater">Lemon Lime Mineral Water</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-M0019">
+              <img class="product-image" src="images/products/vitamin-magnesium.jpg" alt="Vitamin Magnesium - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Magnesium Vitamin</h2>
+          </li>
+          <li class="product-item" data-prod_id="V-MV7763">
+              <img class="product-image" src="images/products/vitamin-multi.jpg" alt="Vitamin Multivitamin - Product Photo">
+              <h2 class="product-name" data-type="vitamin">Multi-vitamin</h2>
+          </li>
+          <li class="product-item" data-prod_id="PB-1234">
+              <img class="product-image" src="images/products/proteinbar-peanutbutter.jpg" alt="Vitamin Protein Bar Peanut Butter - Product Photo">
+              <h2 class="product-name" data-type="proteinbar">Peanut Butter Protein Bar</h2>
+          </li>
+          <li class="product-item" data-prod_id="MW-S0987">
+              <img class="product-image" src="images/products/mineralwater-strawberry.jpg" alt="Mineral Water Strawberry - Product Photo">
+              <h2 class="product-name" data-type="mineralwater">Strawberry Mineral Water</h2>
+          </li>
+          <li class="product-item" data-prod_id="PB-1919">
+              <img class="product-image" src="images/products/proteinbar-lemon.jpg" alt="Protein Bar Lemon - Product Photo">
+              <h2 class="product-name" data-type="proteinbar">Lemon Protein Bar</h2>
+          </li>
+          <li class="product-item" data-prod_id="MW-O1980">
+              <img class="product-image" src="images/products/mineralwater-orange.jpg" alt="Mineral Water Orange - Product Photo">
+              <h2 class="product-name" data-type="mineralwater">Orange Mineral Water</h2>
+          </li>
+          <li class="product-item" data-prod_id="MW-P1968">
+              <img class="product-image" src="images/products/mineralwater-peach.jpg" alt="Mineral Water Peach - Product Photo">
+              <h2 class="product-name" data-type="mineralwater">Peach Mineral Water</h2>
+          </li>
+          <li class="product-item" data-prod_id="MW-R2003">
+              <img class="product-image" src="images/products/mineralwater-raspberry.jpg" alt="Mineral Water Raspberry - Product Photo">
+              <h2 class="product-name" data-type="mineralwater">Raspberry Mineral Water</h2>
+          </li>
+        </ul><!-- product-list -->
+      </section><!-- #products -->
+</body>
+</html>
