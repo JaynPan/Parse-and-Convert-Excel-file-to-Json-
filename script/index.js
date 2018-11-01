@@ -1,7 +1,7 @@
 $("document").ready(function() {
-    $("#products h2.product-name[data-type='vitamin']").css("background-color", "blue");
-    $("#products h2.product-name[data-type='mineralwater']").css("background-color", "purple");
-    $("#products h2.product-name[data-type='proteinbar']").css("background-color", "red");
+    $("#products h2.product-name[data-type='vitamin']").css("background-color", "#F2E4DC");
+    $("#products h2.product-name[data-type='mineralwater']").css("background-color", "rgb(248, 209, 255)");
+    $("#products h2.product-name[data-type='proteinbar']").css("background-color", "rgb(206, 232, 232)");
 
 
 
