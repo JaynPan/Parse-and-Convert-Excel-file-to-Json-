@@ -109,7 +109,7 @@
     for(let i=0; i < ProdArray.length; i++){
       if(prodID === ProdArray[i].prod_id){
         $("#productStock").text(ProdArray[i].in_stock);
-        $("#productPrice").text(ProdArray[i].retail_price);
+        $("#productPrice").text("$" + ProdArray[i].retail_price);
         $("#productDesc").text(ProdArray[i].description);
         $("#productImg").attr("src", ProdArray[i].photo_src);
       }
@@ -117,5 +117,10 @@
   }
 
   oReq.send();
+
+  
+  $(".prev-page").click(function(){
+    window.history.back();
+  });
 
 });
